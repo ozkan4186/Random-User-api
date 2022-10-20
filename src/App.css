@@ -43,6 +43,7 @@ button {
   background-color: blueviolet;
   cursor: pointer;
   margin-top: 1rem;
+  color: black;
 }
 button:hover {
   background-color:aqua;
