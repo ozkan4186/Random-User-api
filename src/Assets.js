@@ -10,22 +10,22 @@ const Assets = ({user,getUser}) => {
   return (
     <div className='container' >
         <div className="first">
-                <img src={picture?.large} alt="" />
+                <img className='ilkimg' src={picture?.large} alt="" />
                    <h2> {name?.title} {name?.first} {name?.last} </h2>
         </div>
         <div className="first">
-            <img src={Mail} width="25px" alt="" />
+            <img className='ilk' src={Mail} width="25px" alt="" />
            <p> {email} </p>
            
         </div>
         <div className="first">
-          <img src={Phone } width="25px"  alt="" />
+          <img className='ilk' src={Phone } width="25px"  alt="" />
         <p> {phone} </p>
 
 
         </div>
            <div className="first">
-              <img src={Location} width="25px"  alt="" />
+              <img className='ilk' src={Location} width="25px"  alt="" />
                  <p> {location?.state} {location?.country}  </p>
              </div>
 
@@ -35,7 +35,7 @@ const Assets = ({user,getUser}) => {
                 <p>  Registered Date:{registered?.date} </p>
              </div>
 
-        <button  className='button' >Random user</button>
+        <button  onClick={getUser}  className='button' >Random user</button>
  
 
     </div>
